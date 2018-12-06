@@ -69,7 +69,7 @@ public abstract double prixDeBaseDeVente() ;
 
 //tostring
 public String toString() {
-	return "Meubles [nbpiece=" + nbpiece + ", numéro=" + numéro + ", adresse=" + adresse + ", C=" + C + "]";
+	return "nbpiece=" + nbpiece + ", numéro=" + numéro + ", adresse=" + adresse + ", C=" + C ;
 }
 
 
