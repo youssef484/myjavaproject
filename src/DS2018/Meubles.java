@@ -3,20 +3,20 @@ package DS2018;
 public abstract class Meubles {
 	 
 	 /*les Attribut(s)*/
-	
+protected double superficie;
 protected int nbpiece;
 protected int numéro;
 protected int adresse;
-protected Cellier C;
 
    
      /*le(s) constructeur(s) */
  
-public Meubles(int nbpiece, int numéro, int adresse) {
+public Meubles(double superficie, int nbpiece, int numéro, int adresse) {
+	
+	this.superficie = superficie;
 	this.nbpiece = nbpiece;
 	this.numéro = numéro;
 	this.adresse = adresse;
-	C = new Cellier();
 }
 
 
@@ -26,6 +26,9 @@ public Meubles(int nbpiece, int numéro, int adresse) {
 public int getNbpiece() {
 	return nbpiece;
 }
+
+
+
 
 
 public void setNbpiece(int nbpiece) {
@@ -65,7 +68,7 @@ public void setC(Cellier c) {
 /*  les methodes */
 
 
-public abstract double prixDeBaseDeVente() ;
+public abstract double prixDeBaseDeVente(double prixMC) ;
 
 //tostring
 public String toString() {

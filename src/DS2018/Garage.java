@@ -1,14 +1,16 @@
 package DS2018;
 
-public class Garage extends Meubles{
+public class Garage extends Meubles implements Location{
 	
 	/* les attributs */
-private double superficie;
+private int nbplace;
+private Cellier cellier;
+
 
  /* constructeur */
-	public Garage(int nbpiece, int numéro, int adresse, double superficie) {
-		super(nbpiece, numéro, adresse);
-		this.superficie = superficie;
+	public Garage(double superficie,int nbpiece, int numéro, int adresse, int nbplace) {
+		super(superficie,nbpiece, numéro, adresse);
+		this.nbplace=nbplace;
 	}
  
 	/* getters & setters */
@@ -25,14 +27,17 @@ private double superficie;
 public double prixDeBaseDeVente() {
 return(2000d);
 }
+
+
 //tostring
 
-@Override
 public String toString() {
 	return "Garage ["+super.toString()+"superficie=" + superficie + "]";
 }
 
-
+public double prixLocation(double prixMC) {
+return(30d);
+}
 
 
 }
