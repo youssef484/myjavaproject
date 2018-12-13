@@ -56,14 +56,7 @@ public void setAdresse(int adresse) {
 }
 
 
-public Cellier getC() {
-	return C;
-}
 
-
-public void setC(Cellier c) {
-	C = c;
-}
 
 /*  les methodes */
 
@@ -72,7 +65,7 @@ public abstract double prixDeBaseDeVente(double prixMC) ;
 
 //tostring
 public String toString() {
-	return "nbpiece=" + nbpiece + ", numéro=" + numéro + ", adresse=" + adresse + ", C=" + C ;
+	return "nbpiece=" + nbpiece + ", numéro=" + numéro + ", adresse=" + adresse ;
 }
 
 

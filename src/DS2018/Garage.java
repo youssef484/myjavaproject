@@ -39,5 +39,8 @@ public double prixLocation(double prixMC) {
 return(30d);
 }
 
+public  double prixDeBaseDeVente(double prixMC) {
+return(2000*nbplace);
+}
 
 }
